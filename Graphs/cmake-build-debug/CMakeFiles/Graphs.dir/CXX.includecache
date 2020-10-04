@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/amado/Documents/C_Playground/C_Playground/Graphs/Graph.cpp
+Graph.h
+/home/amado/Documents/C_Playground/C_Playground/Graphs/Graph.h
+queue
+-
+
+/home/amado/Documents/C_Playground/C_Playground/Graphs/Graph.h
+map
+-
+string
+-
+vector
+-
+

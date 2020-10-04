@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/amado/Documents/C_Playground/C_Playground/Graphs/Graph.cpp">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/amado/Documents/C_Playground/C_Playground/Graphs/Graph.h">
+			<Option target="Graphs"/>
+		</Unit>
 		<Unit filename="/home/amado/Documents/C_Playground/C_Playground/Graphs/main.cpp">
 			<Option target="Graphs"/>
 		</Unit>
