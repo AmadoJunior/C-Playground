@@ -24,12 +24,14 @@ void BST::insert(int value){
              if(current->value >= value){
                 if(!current->left){
                     current->left = newNode;
+                    break;
                 } else {
                     current = current->left;
                 }
              } else if(current->value <= value){
                  if(!current->right){
                      current->right = newNode;
+                     break;
                  } else {
                      current = current->right;
                  }
@@ -74,7 +76,6 @@ std::vector<int> BST::BFS(){
 
     myQueue->enqueue(curNode);
     while(myQueue->length() != 0){
-        std::cout << curNode->value << std::endl;
         curNode = myQueue->dequeue();
         visited.push_back(curNode->value);
         if(curNode->left){
@@ -86,6 +87,50 @@ std::vector<int> BST::BFS(){
     }
     return visited;
 }
+
+//DFS - Pre Order
+std::vector<int> BST::DFSPreOrder(){
+    //Initiating
+    std::vector<int> visited;
+    TreeNode *curNode = root;
+    //Calling Helper Recursive Function
+    DFSPreOrderHelper(curNode, &visited);
+    //Return Filled Array
+    return visited;
+}
+
+void BST::DFSPreOrderHelper(TreeNode* node, std::vector<int>* visited){
+    //Push into Vector
+    visited->push_back(node->value);
+    if(node->left){
+        DFSPreOrderHelper(node->left, visited);
+    }
+    if(node->right){
+        DFSPreOrderHelper(node->right, visited);
+    }
+};
+
+//DFS - Post Order
+std::vector<int> BST::DFSPostOrder(){
+    //Initiating
+    std::vector<int> visited;
+    TreeNode *curNode = root;
+    //Calling Helper Recursive Function
+    DFSPostOrderHelper(curNode, &visited);
+    //Return Filled Array
+    return visited;
+}
+
+void BST::DFSPostOrderHelper(TreeNode* node, std::vector<int>* visited){
+    //Push into Vector
+    if(node->left){
+        DFSPostOrderHelper(node->left, visited);
+    }
+    if(node->right){
+        DFSPostOrderHelper(node->right, visited);
+    }
+    visited->push_back(node->value);
+};
 
 //Getters
 TreeNode* BST::getRoot(){

@@ -20,6 +20,10 @@ class BST{
         void insertRecursive(int value, TreeNode **current);
         TreeNode* find(int val);
         std::vector<int> BFS();
+        std::vector<int> DFSPreOrder();
+        void DFSPreOrderHelper(TreeNode* node, std::vector<int>* visited);
+        std::vector<int> DFSPostOrder();
+        void DFSPostOrderHelper(TreeNode* node, std::vector<int>* visited);
     //Getters
         TreeNode* getRoot();
 };

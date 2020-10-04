@@ -12,12 +12,11 @@ int main(){
     myTree.insert(8);
     myTree.insert(20);
     
-    //result = myTree.BFS();
+    result = myTree.DFSPostOrder();
 
-    // for(int i = 0; i < result.size(); i++){
-    //     std::cout << result[i] << std::endl;
-    // }
-    std::cout << "done" << std::endl;
+     for(int i = 0; i < result.size(); i++){
+         std::cout << result[i] << std::endl;
+     }
 
     return 0;
 }

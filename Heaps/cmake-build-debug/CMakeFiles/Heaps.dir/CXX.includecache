@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/amado/Documents/C_Playground/C_Playground/Heaps/Heap.cpp
+Heap.h
+/home/amado/Documents/C_Playground/C_Playground/Heaps/Heap.h
+math.h
+-
+
+/home/amado/Documents/C_Playground/C_Playground/Heaps/Heap.h
+vector
+-
+

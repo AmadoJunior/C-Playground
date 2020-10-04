@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/amado/Documents/C_Playground/C_Playground/PriorityQueue/PriorityQueue.h
+vector
+-
+Task/Task.h
+/home/amado/Documents/C_Playground/C_Playground/PriorityQueue/Task/Task.h
+
+/home/amado/Documents/C_Playground/C_Playground/PriorityQueue/Task/Task.h
+string
+-
+
+/home/amado/Documents/C_Playground/C_Playground/PriorityQueue/main.cpp
+iostream
+-
+PriorityQueue.h
+/home/amado/Documents/C_Playground/C_Playground/PriorityQueue/PriorityQueue.h
+

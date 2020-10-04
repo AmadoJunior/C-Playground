@@ -1,0 +1,3 @@
+/home/amado/Documents/C_Playground/C_Playground/LinkedList/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/amado/Documents/C_Playground/C_Playground/LinkedList/cmake-build-debug/CMakeFiles/LinkedList.dir
+/home/amado/Documents/C_Playground/C_Playground/LinkedList/cmake-build-debug/CMakeFiles/edit_cache.dir
