@@ -15,8 +15,8 @@ public:
     PriorityQueue();
     void queueTask(Task task);  //Adds a Task
     Task dequeueTask();         //Returns Task De-queued
-    void bubbleUp();            //Bubbles up the last item in the vector depending on priority
-    void sinkDown();            //Sinks down the item at index 0 depending on priority
+    void cascadeUp();            //Bubbles up the last item in the vector depending on priority
+    void cascadeDown();            //Sinks down the item at index 0 depending on priority
     static void swap(std::vector<Task> &vector, int index1, int index2);    //Static Swap
     //Getters
     int getParentIndex(int index);

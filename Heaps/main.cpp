@@ -8,10 +8,12 @@ int main() {
     myHeap.insert(6);
     myHeap.insert(5);
     myHeap.insert(9);
-    myHeap.insert(8);
-    myHeap.insert()
+    myHeap.insert(0);
 
-    std::cout << myHeap.extractMax() << std::endl;
+    int size = myHeap.heapSize();
+    for(int i = 0; i < size; i++){
+        std::cout << myHeap.extractMax() << std::endl;
+    }
 
     return 0;
 }

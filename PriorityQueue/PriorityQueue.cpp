@@ -13,7 +13,7 @@ void PriorityQueue::swap(std::vector<Task> &taskQueue, int index1, int index2) {
 
 void PriorityQueue::queueTask(Task task) {
     taskQueue.push_back(task);
-    bubbleUp();
+    cascadeUp();
 }
 
 Task PriorityQueue::dequeueTask() {
@@ -22,12 +22,12 @@ Task PriorityQueue::dequeueTask() {
     taskQueue.pop_back();
     if(getPriorityQueueSize() > 0){
         taskQueue[0] = end;
-        sinkDown();
+        cascadeDown();
     }
     return max;
 }
 
-void PriorityQueue::bubbleUp() {
+void PriorityQueue::cascadeUp() {
     int index = taskQueue.size() - 1;
     while(index > 0){
         int parentIndex = getParentIndex(index);
@@ -39,7 +39,7 @@ void PriorityQueue::bubbleUp() {
     }
 }
 
-void PriorityQueue::sinkDown() {
+void PriorityQueue::cascadeDown() {
     int index = 0;
 
     while(true){

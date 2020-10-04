@@ -17,7 +17,7 @@ void Heap::swap(std::vector<int>& values, int index1, int index2){
 }
 
 void Heap::bubbleUp(){
-    int index = values.size()-1;
+    int index = heapSize()-1;
     while(index > 0){
         int parentIndex = getParentIndex(index);
         if(values[index] <= values[parentIndex]){
@@ -30,9 +30,9 @@ void Heap::bubbleUp(){
 
 int Heap::extractMax(){
     int max = values[0];
-    int end = values[values.size()-1];
+    int end = values[heapSize()-1];
     values.pop_back();
-    if(values.size() > 0){
+    if(heapSize() > 0){
         values[0] = end;
         sinkDown();
     }
@@ -43,19 +43,19 @@ void Heap::sinkDown(){
     int index = 0;
 
     while(true){
-        int leftChildIndex = 2 * index + 1;
-        int rightChildIndex = 2 * index + 2;
+        int leftChildIndex = getLeftChildIndex(index);
+        int rightChildIndex = getRightChildIndex(index);
         int leftChild, rightChild;
         int swapIndex = -1;
 
-        if(leftChildIndex < values.size()){
+        if(leftChildIndex < heapSize()){
             leftChild = values[leftChildIndex];
             if(leftChild > values[index]){
                 swapIndex = leftChildIndex;
             }
         }
 
-        if(rightChildIndex < values.size()) {
+        if(rightChildIndex < heapSize()) {
             rightChild = values[rightChildIndex];
             if(
                     (swapIndex == -1 && rightChild > values[index]) ||
