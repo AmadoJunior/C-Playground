@@ -141,6 +141,7 @@ std::vector<std::string> Graph::BFS(std::string start) {
 
     //Adding First Item to Stack
     queue.push(start);
+    //Marking First Element as Visited
     adjacencyList[queue.front()].second = true;
 
     //While there are items left int the stack

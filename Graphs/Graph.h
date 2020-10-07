@@ -22,10 +22,11 @@ public:
     void addEdge(std::string vertexKey1, std::string vertexKey2);
     void removeEdge(std::string vertexKey1, std::string vertexKey2);
     void removeVertex(std::string vertexKey);
-    //Depth First
+    //Depth First - Visits neighbors of its neighbors before visiting own
     std::vector<std::string> DFSRecursive(std::string start);
     int DFSHelper(std::string start, std::vector<std::string> &result);
     std::vector<std::string> DFSIterative(std::string start);
+    //BFS - Visits every neighbor belonging to the vertex it is currently at before moving onto other vertices
     std::vector<std::string> BFS(std::string start);
 };
 
