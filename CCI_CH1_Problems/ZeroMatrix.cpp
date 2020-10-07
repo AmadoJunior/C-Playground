@@ -1,14 +1,15 @@
 #include <iostream>
 #include <map>
 
-void zeroMatrix(int[][4], const int, const int);
+void zeroMatrix(int[4][4], const int, const int);
 
 int main(){
     int myArr[4][4] = {
-        {1,2,3,4},
-        {5,6,7,8},
-        {0,1,1,1},
+        {0,2,3,1},
+        {1,6,1,1},
+        {1,1,0,1},
         {1,1,1,1}
+
     };
     zeroMatrix(myArr, 4, 4);
     for(int i = 0; i < 4; i++){
@@ -20,15 +21,17 @@ int main(){
     return 0;
 }
 
-void zeroMatrix(int matrix[][4], const int ROW, const int COL){
+void zeroMatrix(int matrix[4][4], const int ROW, const int COL){
+    //O(ROW * COL) Time
+    //O(ROW + COL) Space
     std::map<int, bool> ignoreRow;
     std::map<int, bool> ignoreCol;
     for(int i = 0; i < ROW; i++){
-        if(ignoreRow.count(i)){
+        if(ignoreRow[i]){
             continue;
         }
         for(int j = 0; j < COL; j++){
-            if(ignoreCol.count(j)){
+            if(ignoreCol[j]){
                 continue;
             }
             if(matrix[i][j] == 0){
@@ -40,6 +43,7 @@ void zeroMatrix(int matrix[][4], const int ROW, const int COL){
                 }
                 ignoreRow[i] = true;
                 ignoreCol[j] = true;
+                break;
             }
         }
     }
