@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Dijkstras.dir/tools/PriorityQueue.cpp.o CMakeFiles/Dijkstras.dir/main.cpp.o CMakeFiles/Dijkstras.dir/WeightedGraph.cpp.o  -o Dijkstras 
