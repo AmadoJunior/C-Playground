@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Heaps.dir/main.cpp.o CMakeFiles/Heaps.dir/Heap.cpp.o  -o Heaps 

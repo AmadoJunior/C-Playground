@@ -1,4 +1,0 @@
-/home/amado/Documents/C_Playground/C_Playground/CCI_CH1_Problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/amado/Documents/C_Playground/C_Playground/CCI_CH1_Problems/cmake-build-debug/CMakeFiles/CCI_CH1_Problems.dir
-/home/amado/Documents/C_Playground/C_Playground/CCI_CH1_Problems/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/amado/Documents/C_Playground/C_Playground/CCI_CH1_Problems/cmake-build-debug/CMakeFiles/ZeroMatrix.dir

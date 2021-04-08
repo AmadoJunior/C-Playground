@@ -1,3 +1,0 @@
-/home/amado/Documents/C_Playground/C_Playground/Dijkstras/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/amado/Documents/C_Playground/C_Playground/Dijkstras/cmake-build-debug/CMakeFiles/Dijkstras.dir
-/home/amado/Documents/C_Playground/C_Playground/Dijkstras/cmake-build-debug/CMakeFiles/edit_cache.dir
