@@ -2,6 +2,17 @@
 #include <iostream>
 
 LinkedList::LinkedList() {
+    Init();
+}
+
+LinkedList::LinkedList(std::vector<int> &arr) {
+    Init();
+    for(int num : arr){
+        push(num);
+    }
+}
+
+void LinkedList::Init(){
     int length = 0;
     this->head = nullptr;
     this->tail = nullptr;
@@ -65,4 +76,16 @@ void LinkedList::reverseList(){
         //Advancing
         current = next;
     }
+}
+
+Node* LinkedList::getHead(){
+    return this->head;
+}
+
+Node* LinkedList::getTail(){
+    return this->tail;
+}
+
+int LinkedList::getLength(){
+    return this->length;
 }
